@@ -135,6 +135,27 @@ footer div a img{
 
 
 
+body header nav ul:hover{
+    background-color: pink;
+    
+}
 
+body header nav ul:hover{
+    background-color: pink;
+    color: red;
+}
+
+
+
+@media screen and (max-with: 500px){
+   header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }      
+    
+}
+
+    
 
 
