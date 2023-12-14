@@ -1,29 +1,5 @@
 /*!------ HEADER ------*/
 
-body{
-    padding: 0%;
-}
-
-h1{
-    color: purple;
-}
-header h1{
-    font-size: 35px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: 800;
-}
-
-
-header nav ul{
-    list-style: none;
-}
-
-
-header nav ul li a{
-    text-decoration: none;
-    color: purple;
-}
-
 
 
 
@@ -60,6 +36,10 @@ body main section img{
 
 }
 
+.hero h2{
+    background-color: pink;
+}
+
 main i{
     font-size: 50px;
     background-color: pink;
@@ -75,15 +55,7 @@ main i{
 
 /* barra */
 
-header{
-    background-color: pink;
-    position: sticky;
-    top: 0;
-    z-index: 100; 
-    width: 100%;
-    height: 100px;
 
-}
 
 
 
@@ -121,6 +93,25 @@ main h2{
 }
 
 
+
+
+
+/* seccion de cartas*/
+.card-group div{
+    height: 250px; ;
+    width: 370px;
+    border: 1px black;
+    text-align: center;
+    margin: 20px;
+    transition: 1s;
+}
+
+.card-group div:hover{
+    transform: scale(1.2);
+}
+
+
+
 /*!------ FOOTER ------*/
 
 footer div a img{
@@ -129,33 +120,15 @@ footer div a img{
 }
 
 
-/* seccion de clases*/
 
 
 
+/*--- MEDIA QUERY DEL TEXTO----*/
 
-
-body header nav ul:hover{
-    background-color: pink;
+@media and (max-with:1000px){
+    .card-group{
+        flex-direction:column
+    }
     
 }
-
-body header nav ul:hover{
-    background-color: pink;
-    color: red;
-}
-
-
-
-@media screen and (max-with: 500px){
-   header {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-   }      
-    
-}
-
-    
-
 
